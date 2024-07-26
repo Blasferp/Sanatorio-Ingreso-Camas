@@ -79,7 +79,7 @@ def cargar_ATB():
 # Función para cargar el archivo Cama.xlsx
 def cargar_Cama():
     try:
-        df = pd.read_excel('data\Cama.xlsx')
+        df = pd.read_excel(r'data\Cama.xlsx')
         return df
     except Exception as e:
         print(f"No se pudo cargar Cama.xlsx: {e}")

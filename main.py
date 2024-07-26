@@ -286,7 +286,7 @@ if selected == 'Principal':
 
 if selected == 'Estado de Camas':
     # Título de la aplicación
-    st.image(r'C:\Users\Blasferp\Documents\GitHub\Hospital\imagenes\banner.jpg')    
+    st.image('imagen/banner.jpg')    
     st.title("Estado de Camas 🛏️:")
 
     st.write('*************')        
@@ -329,7 +329,7 @@ if selected == 'Estado de Camas':
 
 if selected == 'Visualizar Camas':
     # Título de la aplicación
-    st.image(r'C:\Users\Blasferp\Documents\GitHub\Hospital\imagenes\banner.jpg')
+    st.image('imagen/banner.jpg')
     st.title("Visualizacion de Camas 🛏️:")
     st.write('*************')
     
@@ -481,7 +481,7 @@ if selected == 'Visualizar Camas':
 
 if selected == 'Ingresar Cama':
     # Título de la aplicación
-    st.image(r'C:\Users\Blasferp\Documents\GitHub\Hospital\imagenes\banner.jpg')
+    st.image('imagen/banner.jpg')
     st.title("Gestión de Camas - 🛏️:")
     st.write('*************')
     
@@ -585,7 +585,7 @@ if selected == 'Ingresar Cama':
 
 if selected == 'Ingresar Atencion':
     # Título de la aplicación
-    st.image(r'C:\Users\Blasferp\Documents\GitHub\Hospital\imagenes\banner.jpg')
+    st.image('imagen/banner.jpg')
     st.title("Gestión de Atención 🩺:")
     st.write('*************')
     
@@ -764,7 +764,7 @@ if selected == 'Ingresar Atencion':
 
 if selected == 'Medicos':
     # Título de la aplicación
-    st.image(r'C:\Users\Blasferp\Documents\GitHub\Hospital\imagenes\banner.jpg')
+    st.image('imagen/banner.jpg')
     st.title("Gestión de Medicos")
     # st.image('abogados.jpg')
     st.write('\n')

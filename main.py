@@ -247,7 +247,7 @@ def guardar_Medico(df):
 
 if selected == 'Principal':
     # Título de la aplicación
-    st.image(imagen/banner.jpg)
+    st.image('imagen/banner.jpg')
     st.write('*************')  
     
     # Descripción de la aplicación

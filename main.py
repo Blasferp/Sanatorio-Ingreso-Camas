@@ -151,7 +151,7 @@ def cargar_Procedimiento():
 # Función para cargar el archivo Medico.xlsx
 def cargar_Medico():
     try:
-        df = pd.read_excel('data\Medico.xlsx')
+        df = pd.read_excel('data/Medico.xlsx')
         return df
     except FileNotFoundError:
         df_Medico = pd.DataFrame(columns=['DNI', 'NOMBRE', 'APELLIDO', 'TELEFONO','EMAIL'])
@@ -237,7 +237,7 @@ def guardar_Procedimiento(df):
         
 def guardar_Medico(df):
     try:
-        df.to_excel('data\Medico.xlsx', index=False)
+        df.to_excel('data/Medico.xlsx', index=False)
         print("DataFrame Medico guardado exitosamente en Medico.xlsx")
     except Exception as e:
         print(f"No se pudo guardar Medico.xlsx: {e}")

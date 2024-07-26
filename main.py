@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import datetime
 import openpyxl
-# import streamlit_image_coordinates
 from streamlit_option_menu import option_menu
 import plotly.express as px
 import altair as alt
@@ -248,7 +247,7 @@ def guardar_Medico(df):
 
 if selected == 'Principal':
     # Título de la aplicación
-    st.image(r'C:\Users\Blasferp\Documents\GitHub\Hospital\imagenes\banner.jpg')
+    st.image(imagen/banner.jpg)
     st.write('*************')  
     
     # Descripción de la aplicación

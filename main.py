@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import datetime
 import openpyxl
-# import streamlit_image_coordinates
 from streamlit_option_menu import option_menu
 import plotly.express as px
 import altair as alt
@@ -71,7 +70,7 @@ with st.sidebar:
 # Función para cargar el archivo ATB.xlsx
 def cargar_ATB():
     try:
-        df = pd.read_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\ATB.xlsx')
+        df = pd.read_excel('data/ATB.xlsx')
         return df
     except FileNotFoundError:
         df_ATB = pd.DataFrame(columns=['CAMA', 'DNI', 'FECHA', 'ATB','FINALIZA'])
@@ -80,7 +79,7 @@ def cargar_ATB():
 # Función para cargar el archivo Cama.xlsx
 def cargar_Cama():
     try:
-        df = pd.read_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Cama.xlsx')
+        df = pd.read_excel(r'data/Cama.xlsx')
         return df
     except Exception as e:
         print(f"No se pudo cargar Cama.xlsx: {e}")
@@ -89,7 +88,7 @@ def cargar_Cama():
 # Función para cargar el archivo Cultivo.xlsx
 def cargar_Cultivo():
     try:
-        df = pd.read_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Cultivo.xlsx')
+        df = pd.read_excel('data/Cultivo.xlsx')
         return df
     except FileNotFoundError:
         df_Cultivo = pd.DataFrame(columns=['CAMA', 'DNI', 'FECHA', 'METODO','RESULTADO'])
@@ -98,7 +97,7 @@ def cargar_Cultivo():
 # Función para cargar el archivo Diagnostico.xlsx
 def cargar_Diagnostico():
     try:
-        df = pd.read_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Diagnostico.xlsx')
+        df = pd.read_excel('data/Diagnostico.xlsx')
         return df
     except FileNotFoundError:
         df_Diagnostico = pd.DataFrame(columns=['CAMA', 'DNI', 'FECHA', 'DIAGNOSTICO'])
@@ -107,7 +106,7 @@ def cargar_Diagnostico():
 # Función para cargar el archivo Examen Complementario.xlsx
 def cargar_ExamenComplementario():
     try:
-        df = pd.read_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Examen Complementario.xlsx')
+        df = pd.read_excel('data/Examen Complementario.xlsx')
         return df
     except FileNotFoundError:
         df_ExamenComplementario = pd.DataFrame(columns=['CAMA', 'DNI', 'FECHA', 'EX. COMPLEMENTARIO'])
@@ -116,7 +115,7 @@ def cargar_ExamenComplementario():
 # Función para cargar el archivo Funciones Fisiologicas.xlsx
 def cargar_FuncionesFisiologicas():
     try:
-        df = pd.read_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Funciones Fisiologicas.xlsx')
+        df = pd.read_excel('data/Funciones Fisiologicas.xlsx')
         return df
     except FileNotFoundError:
         df_FuncionesFisiologicas = pd.DataFrame(columns=['CAMA', 'DNI', 'FECHA', 'ALIMENTACION', 'DIURESIS', 'CATARSIS'])
@@ -125,7 +124,7 @@ def cargar_FuncionesFisiologicas():
 # Función para cargar el archivo Laboratorio.xlsx
 def cargar_Laboratorio():
     try:
-        df = pd.read_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Laboratorio.xlsx')
+        df = pd.read_excel('data/Laboratorio.xlsx')
         return df
     except FileNotFoundError:
         df_Laboratorio = pd.DataFrame(columns=['CAMA', 'DNI', 'FECHA', 'LABORATORIOS'])
@@ -134,7 +133,7 @@ def cargar_Laboratorio():
 # Función para cargar el archivo Paciente.xlsx
 def cargar_Paciente():
     try:
-        df = pd.read_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Paciente.xlsx')
+        df = pd.read_excel('data/Paciente.xlsx')
         return df
     except FileNotFoundError:
         df_Paciente = pd.DataFrame(columns=['DNI', 'NOMBRE', 'APELLIDO', 'EDAD','CAMA', 'FECHA NAC', 'FECHA ING', 'ANTECEDENTES', 'DIAGNOSTICO', 'MEDICO', 'FECHA REGISTRO', 'HORA REGISTRO'])
@@ -143,7 +142,7 @@ def cargar_Paciente():
 # Función para cargar el archivo Procedimiento.xlsx
 def cargar_Procedimiento():
     try:
-        df = pd.read_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Procedimiento.xlsx')
+        df = pd.read_excel('data/Procedimiento.xlsx')
         return df
     except FileNotFoundError:
         df_Procedimiento = pd.DataFrame(columns=['CAMA', 'DNI', 'FECHA', 'METODO'])
@@ -152,7 +151,7 @@ def cargar_Procedimiento():
 # Función para cargar el archivo Medico.xlsx
 def cargar_Medico():
     try:
-        df = pd.read_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Medico.xlsx')
+        df = pd.read_excel('data/Medico.xlsx')
         return df
     except FileNotFoundError:
         df_Medico = pd.DataFrame(columns=['DNI', 'NOMBRE', 'APELLIDO', 'TELEFONO','EMAIL'])
@@ -175,70 +174,70 @@ df_Medico = cargar_Medico()
 # Funciones para guardar cada DataFrame en un archivo Excel
 def guardar_ATB(df):
     try:
-        df.to_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\ATB.xlsx', index=False)
+        df.to_excel('data/ATB.xlsx', index=False)
         print("DataFrame ATB guardado exitosamente en ATB.xlsx")
     except Exception as e:
         print(f"No se pudo guardar ATB.xlsx: {e}")
 
 def guardar_Cama(df):
     try:
-        df.to_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Cama.xlsx', index=False)
+        df.to_excel('data/Cama.xlsx', index=False)
         print("DataFrame Cama guardado exitosamente en Cama.xlsx")
     except Exception as e:
         print(f"No se pudo guardar Cama.xlsx: {e}")
 
 def guardar_Cultivo(df):
     try:
-        df.to_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Cultivo.xlsx', index=False)
+        df.to_excel('data/Cultivo.xlsx', index=False)
         print("DataFrame Cultivo guardado exitosamente en Cultivo.xlsx")
     except Exception as e:
         print(f"No se pudo guardar Cultivo.xlsx: {e}")
 
 def guardar_Diagnostico(df):
     try:
-        df.to_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Diagnostico.xlsx', index=False)
+        df.to_excel('data/Diagnostico.xlsx', index=False)
         print("DataFrame Diagnostico guardado exitosamente en Diagnostico.xlsx")
     except Exception as e:
         print(f"No se pudo guardar Diagnostico.xlsx: {e}")
 
 def guardar_ExamenComplementario(df):
     try:
-        df.to_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Examen Complementario.xlsx', index=False)
+        df.to_excel('data/Examen Complementario.xlsx', index=False)
         print("DataFrame Examen Complementario guardado exitosamente en Examen Complementario.xlsx")
     except Exception as e:
         print(f"No se pudo guardar Examen Complementario.xlsx: {e}")
 
 def guardar_FuncionesFisiologicas(df):
     try:
-        df.to_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Funciones Fisiologicas.xlsx', index=False)
+        df.to_excel('data/Funciones Fisiologicas.xlsx', index=False)
         print("DataFrame Funciones Fisiologicas guardado exitosamente en Funciones Fisiologicas.xlsx")
     except Exception as e:
         print(f"No se pudo guardar Funciones Fisiologicas.xlsx: {e}")
 
 def guardar_Laboratorio(df):
     try:
-        df.to_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Laboratorio.xlsx', index=False)
+        df.to_excel('data/Laboratorio.xlsx', index=False)
         print("DataFrame Laboratorio guardado exitosamente en Laboratorio.xlsx")
     except Exception as e:
         print(f"No se pudo guardar Laboratorio.xlsx: {e}")
 
 def guardar_Paciente(df):
     try:
-        df.to_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Paciente.xlsx', index=False)
+        df.to_excel('data/Paciente.xlsx', index=False)
         print("DataFrame Paciente guardado exitosamente en Paciente.xlsx")
     except Exception as e:
         print(f"No se pudo guardar Paciente.xlsx: {e}")
 
 def guardar_Procedimiento(df):
     try:
-        df.to_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Procedimiento.xlsx', index=False)
+        df.to_excel('data/Procedimiento.xlsx', index=False)
         print("DataFrame Procedimiento guardado exitosamente en Procedimiento.xlsx")
     except Exception as e:
         print(f"No se pudo guardar Procedimiento.xlsx: {e}")
         
 def guardar_Medico(df):
     try:
-        df.to_excel(r'C:\Users\Blasferp\Documents\GitHub\Hospital\data\Medico.xlsx', index=False)
+        df.to_excel('data/Medico.xlsx', index=False)
         print("DataFrame Medico guardado exitosamente en Medico.xlsx")
     except Exception as e:
         print(f"No se pudo guardar Medico.xlsx: {e}")
@@ -248,7 +247,7 @@ def guardar_Medico(df):
 
 if selected == 'Principal':
     # Título de la aplicación
-    st.image(r'C:\Users\Blasferp\Documents\GitHub\Hospital\imagenes\banner.jpg')
+    st.image('imagen/banner.jpg')
     st.write('*************')  
     
     # Descripción de la aplicación
@@ -287,7 +286,7 @@ if selected == 'Principal':
 
 if selected == 'Estado de Camas':
     # Título de la aplicación
-    st.image(r'C:\Users\Blasferp\Documents\GitHub\Hospital\imagenes\banner.jpg')    
+    st.image('imagen/banner.jpg')    
     st.title("Estado de Camas 🛏️:")
 
     st.write('*************')        
@@ -330,7 +329,7 @@ if selected == 'Estado de Camas':
 
 if selected == 'Visualizar Camas':
     # Título de la aplicación
-    st.image(r'C:\Users\Blasferp\Documents\GitHub\Hospital\imagenes\banner.jpg')
+    st.image('imagen/banner.jpg')
     st.title("Visualizacion de Camas 🛏️:")
     st.write('*************')
     
@@ -482,7 +481,7 @@ if selected == 'Visualizar Camas':
 
 if selected == 'Ingresar Cama':
     # Título de la aplicación
-    st.image(r'C:\Users\Blasferp\Documents\GitHub\Hospital\imagenes\banner.jpg')
+    st.image('imagen/banner.jpg')
     st.title("Gestión de Camas - 🛏️:")
     st.write('*************')
     
@@ -586,7 +585,7 @@ if selected == 'Ingresar Cama':
 
 if selected == 'Ingresar Atencion':
     # Título de la aplicación
-    st.image(r'C:\Users\Blasferp\Documents\GitHub\Hospital\imagenes\banner.jpg')
+    st.image('imagen/banner.jpg')
     st.title("Gestión de Atención 🩺:")
     st.write('*************')
     
@@ -765,7 +764,7 @@ if selected == 'Ingresar Atencion':
 
 if selected == 'Medicos':
     # Título de la aplicación
-    st.image(r'C:\Users\Blasferp\Documents\GitHub\Hospital\imagenes\banner.jpg')
+    st.image('imagen/banner.jpg')
     st.title("Gestión de Medicos")
     # st.image('abogados.jpg')
     st.write('\n')

@@ -54,8 +54,9 @@ Asegúrate de tener Python 3.x instalado y las siguientes bibliotecas requeridas
 
 Puedes instalar las dependencias con el siguiente comando:
 
+```
 pip install pandas streamlit
-
+```
 
 ## Modo de uso
 

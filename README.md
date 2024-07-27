@@ -116,7 +116,7 @@ Muestra el estado actual de las camas y los pacientes, incluyendo las camas vac√
 
 **6. M√©dicos:**
 
-- - Permite ingresar datos de un nuevo medico a una cama existente.
+- Permite ingresar datos de un nuevo medico a una cama existente.
 
 
 ## Imagenes

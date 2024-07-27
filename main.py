@@ -498,7 +498,7 @@ if selected == 'Ingresar Cama':
     
     # Verificar el estado de ocupación de la cama seleccionada
     if fila_seleccionada['OCUPACION'].values[0] == 'LIBRE':
-        st.write('La cama está Libre')
+        st.error('La cama está Libre')
         
         # Formulario para ingresar datos del paciente
         with st.form(key="form_ingresar_cama", clear_on_submit=True):

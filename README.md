@@ -1,7 +1,7 @@
 # Sanatorio:
- ### Gestión de Camass y Atencion a Pacientes
+ ### Gestión de Camas y Atencion a Pacientes
 
-![Medico](imagen\banner.jpg)
+![Medico](imagen/banner.jpg)
 
 # Índice
 

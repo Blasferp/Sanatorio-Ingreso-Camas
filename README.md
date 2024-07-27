@@ -120,13 +120,12 @@ Muestra el estado actual de las camas y los pacientes, incluyendo las camas vac√
 
 ## Imagenes
 
-![Men√∫ Principal](Menu.PNG)
-![Principal](Juicios.PNG)
-![Estado de camas](Procesos.PNG)
-![Visualiacion de camas](Procesos.PNG)
-![ingresar cama](Procesos.PNG)
-![ingresar atencion](Procesos.PNG)
-![Crear medico](Procesos.PNG)
+![Principal](imagen/Principal.PNG)
+![Estado de camas](imagen/Estado de camas.PNG)
+![Visualiacion de camas](imagen/Visualiacion de camas.PNG)
+![ingresar cama](imagen/ingresar cama.PNG)
+![ingresar atencion](imagen/ingresar atencion.PNG)
+![Crear medico](imagen/Crear medico.PNG)
 
 
 ## Archivos Principales

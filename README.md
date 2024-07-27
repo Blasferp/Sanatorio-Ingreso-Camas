@@ -1,9 +1,7 @@
-# Sanatorio-Ingreso-Camas
-La aplicación de gestión hospitalaria permite registrar y gestionar atenciones médicas de pacientes. Los usuarios pueden seleccionar camas, ingresar datos de pacientes y atenciones, y generar informes descargables. Facilita el seguimiento eficiente de tratamientos y procedimientos médicos, asegurando una gestión precisa y organizada.
-# Estudio de Abogados:
- ### Gestión de Procesos y Clientes para Estudios Jurídicos
+# Sanatorio:
+ ### Gestión de Camass y Atencion a Pacientes
 
-![Abogados](abogados.jpg)
+![Medico](imagene\banner.jpg)
 
 # Índice
 
@@ -51,9 +49,8 @@ Asegúrate de tener Python 3.x instalado y las siguientes bibliotecas requeridas
 
 Puedes instalar las dependencias con el siguiente comando:
 
-```
 pip install pandas streamlit
-```
+
 
 ## Modo de uso
 
@@ -62,24 +59,21 @@ pip install pandas streamlit
 Para ejecutar esta aplicación en tu máquina local, sigue estos pasos:
 
 1. Clona este repositorio en tu sistema local.
-```
-    git clone <URL-del-repositorio>
+git clone <URL-del-repositorio>
     cd nombre-del-repositorio
-```
+
 
 2. **Instalar Dependencias:**
 
     Asegúrate de tener Python y pip instalados. Luego, instala las dependencias necesarias ejecutando:
-```
-    pip install -r requirements.txt
-```
+pip install -r requirements.txt
+
 3. **Ejecutar la Aplicación:**
 
     Una vez que todas las dependencias estén instaladas, puedes ejecutar la aplicación usando Streamlit:
 
-```
-    streamlit run main.py
-```
+streamlit run main.py
+
 
 4. **Interactuar con la Aplicación:**
 
@@ -98,40 +92,32 @@ La aplicación se organiza a través de un menú principal con las siguientes op
 
 - Indicaciones de uso y diccionario de las tablas y el significado de las columnas.
 
-**2. Vencimientos:**
+**2. Estados de Camas:**
 
 Muestra los procesos que están próximos a vencerse.
 
-**3. Juicios:**
+**3. Visualizar Camas:**
 
 -Permite agregar, observar y gestionar juicios.
 
-**4. Procesos:**
+**4. Ingresar Camas:**
 
 - Similar a "Juicios", permite agregar, observar y gestionar procesos dentro de cada juicio.
 
-**5. Clientes:**
+**5. Medicos:**
 
 - Se divide en "Personas Físicas" y "Empresas". Permite seleccionar, filtrar y crear registros.
 
-**6. Abogados:**
-
-- Similar a "Clientes", permite gestionar la información de los abogados del estudio.
-
-**7. Gastos y Cobros:**
-
-- Permite observar y crear tipos de gastos y cobros asociados a los procesos.
-
-**8. Escritos:**
-
-- Los usuarios pueden subir escritos para ser modificados y 
-gestionados.
 
 
 ## Imagenes
 
 ![Menú Principal](Menu.PNG)
 ![Juicios](Juicios.PNG)
+![Procesos](Procesos.PNG)
+![Procesos](Procesos.PNG)
+![Procesos](Procesos.PNG)
+![Procesos](Procesos.PNG)
 ![Procesos](Procesos.PNG)
 
 
@@ -141,21 +127,19 @@ gestionados.
   Archivo principal que contiene el código de la aplicación.
 
 **Archivos Excel (.xlsx):**
-   - Abogados.xlsx
-   - Clientes.xlsx
-   - Cobros.xlsx
-   - Empresas.xlsx
-   - Estado Civil.xlsx
-   - Exp Fisico.xlsx
-   - Fueros.xlsx
-   - Gastos.xlsx
-   - Juicios.xlsx
-   - Movimientos.xlsx
-   - Nacionalidad.xlsx
-   - Procesos.xlsx
-   - Imágenes (.jpg y .png): Utilizadas en la interfaz de usuario.
-Notas
-Asegúrate de mantener actualizados los archivos Excel en el directorio raíz del proyecto para que la aplicación funcione correctamente.
+**- data:** 
+   - ATB.xlsx
+   - Cama.xlsx
+   - Cultivo.xlsx
+   - Examen Complementario.xlsx
+   - Funciones Fisiologicas.xlsx
+   - Laboratorio.xlsx
+   - Medico.xlsx
+   - Paciente.xlsx
+   - Procedimiento.xlsx
+
+**- imagen:**
+   - Banner.jpg : Utilizadas en la interfaz de usuario.
 
 
 ## Notas
@@ -180,7 +164,3 @@ Asegúrate de mantener actualizados los archivos Excel en el directorio raíz de
 ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
----
-
-

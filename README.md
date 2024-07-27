@@ -17,7 +17,7 @@ La aplicación de gestión hospitalaria permite registrar y gestionar atenciones
 8. [Contacto](#contacto)
 9. [Tecnologías utilizadas](#tecnolog%C3%ADas-utilizadas)
 
-Este proyecto consiste en una aplicación desarrollada con Python, Pandas y Streamlit que facilita la gestión integral de un estudio jurídico. La aplicación permite a los usuarios agregar, visualizar y gestionar datos relacionados con juicios, procesos, clientes y abogados. Además, proporciona funcionalidades para mantener un control de los vencimientos de los procesos y emitir avisos pertinentes.
+La aplicación de gestión de atención médica, desarrollada con Streamlit, permite registrar y gestionar atenciones de pacientes hospitalizados. Los usuarios pueden seleccionar camas, visualizar información detallada de los pacientes, ingresar datos de atención médica, y actualizar registros. Además, facilita la descarga de informes personalizados con la información completa del paciente, ayudando a mantener un seguimiento eficiente y preciso de los tratamientos y procedimientos médicos.
 
 ## Funcionalidades Principales
 

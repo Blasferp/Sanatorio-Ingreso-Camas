@@ -1,7 +1,7 @@
 # Sanatorio:
  ### Gestión de Camass y Atencion a Pacientes
 
-![Medico](imagene\banner.jpg)
+![Medico](imagen\banner.jpg)
 
 # Índice
 
@@ -19,23 +19,28 @@ La aplicación de gestión de atención médica, desarrollada con Streamlit, per
 
 ## Funcionalidades Principales
 
-1. **Gestión de Juicios y Procesos:**
-   - **Agregar y Visualizar Juicios:** Permite ingresar nuevos juicios y consultar información detallada de los juicios existentes.
-   - **Administración de Procesos:** Gestión de los procesos asociados a cada juicio, incluyendo información sobre pruebas, movimientos y comentarios.
+1. **Gestión de Camas:**
+   - **Alta de Cama Vacía:** Permite registrar una cama vacía y asignar datos del paciente cuando la cama es ocupada.
+   - **Visualización y Gestión de Datos del Paciente:** Permite visualizar y actualizar los datos de los pacientes asociados a cada cama.
 
-2. **Gestión de Clientes y Abogados:**
-   - **Registrar y Consultar Clientes:** Agrega información detallada de los clientes, tanto personas físicas como empresas.
-   - **Administración de Abogados:** Registro y consulta de abogados asociados al estudio.
+2. **Registro de Procesos Médicos:**
+   - **Diagnóstico:** Registro y actualización de diagnósticos médicos realizados a los pacientes.
+   - **Laboratorios:** Gestión de datos de laboratorios y resultados asociados a los pacientes.
+   - **Exámenes Complementarios:** Registro y gestión de exámenes complementarios realizados.
+   - **Tratamientos y Procedimientos:** Registro y seguimiento de tratamientos y procedimientos médicos, incluyendo fechas.
 
-3. **Control de Vencimientos:**
-   - **Avisos de Vencimientos:** Mantiene un control sobre las fechas de vencimiento de los procesos, emitiendo avisos y recordatorios.
+3. **Antibióticos (ATB):**
+   - **Registro de Tratamientos con Antibióticos:** Permite registrar y llevar un seguimiento de las fechas de tratamiento con antibióticos.
+   - **Finalización de Tratamientos:** Permite registrar la finalización de los tratamientos con antibióticos.
 
-4. **Gestión Financiera:**
-   - **Visualización de Gastos y Cobros:** Muestra listas de gastos y cobros asociados a los procesos, permitiendo el filtrado y la descarga de datos.
-   - **Creación de Tipos de Gastos y Cobros:** Permite la adición de nuevos tipos de gastos y cobros directamente desde la interfaz.
+4. **Historial Clínico de Cama:**
+   - **Registro de Actividades Médicas:** Permite llevar un registro completo de todas las actividades médicas realizadas a los pacientes en una cama específica.
+   - **Visualización para Revisión Médica:** Facilita la revisión del historial clínico por otros médicos para verificar el tratamiento previo del paciente.
 
 5. **Descarga de Datos:**
-   - **Exportación a Excel:** Los datos filtrados pueden ser descargados en formato Excel para un análisis adicional.
+   - **Exportación de Informes:** Los datos filtrados pueden ser descargados en formato Excel para un análisis adicional.
+   - **Informe Personalizado:** Genera informes personalizados con la información completa del paciente para su descarga.
+
 
 
 
@@ -90,35 +95,38 @@ La aplicación se organiza a través de un menú principal con las siguientes op
 
 **1. Principal:**
 
-- Indicaciones de uso y diccionario de las tablas y el significado de las columnas.
+- Indicaciones de uso.
 
 **2. Estados de Camas:**
 
-Muestra los procesos que están próximos a vencerse.
+Muestra el estado actual de las camas y los pacientes, incluyendo las camas vacías y ocupadas.
 
 **3. Visualizar Camas:**
 
--Permite agregar, observar y gestionar juicios.
+- Permite agregar, observar y gestionar camas. Los usuarios pueden ver detalles de los pacientes asignados a cada cama y actualizar información médica.
 
 **4. Ingresar Camas:**
 
-- Similar a "Juicios", permite agregar, observar y gestionar procesos dentro de cada juicio.
+- Permite registrar una nueva cama vacía.
 
-**5. Medicos:**
+**5. Ingresar Atencion:**
 
-- Se divide en "Personas Físicas" y "Empresas". Permite seleccionar, filtrar y crear registros.
+- Permite ingresar datos de un nuevo paciente a una cama existente.
 
+**6. Médicos:**
+
+- - Permite ingresar datos de un nuevo medico a una cama existente.
 
 
 ## Imagenes
 
 ![Menú Principal](Menu.PNG)
-![Juicios](Juicios.PNG)
-![Procesos](Procesos.PNG)
-![Procesos](Procesos.PNG)
-![Procesos](Procesos.PNG)
-![Procesos](Procesos.PNG)
-![Procesos](Procesos.PNG)
+![Principal](Juicios.PNG)
+![Estado de camas](Procesos.PNG)
+![Visualiacion de camas](Procesos.PNG)
+![ingresar cama](Procesos.PNG)
+![ingresar atencion](Procesos.PNG)
+![Crear medico](Procesos.PNG)
 
 
 ## Archivos Principales

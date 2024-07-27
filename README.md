@@ -68,7 +68,7 @@ Para ejecutar esta aplicación en tu máquina local, sigue estos pasos:
 ```
     git clone <URL-del-repositorio>
     cd nombre-del-repositorio
-
+```
 
 2. **Instalar Dependencias:**
 
@@ -87,8 +87,6 @@ Para ejecutar esta aplicación en tu máquina local, sigue estos pasos:
 4. **Interactuar con la Aplicación:**
 
     Abre tu navegador y visita http://localhost:8501 para ver y utilizar la aplicación.
-
-
 
     ![Modo de Uso](giphy.gif)
 

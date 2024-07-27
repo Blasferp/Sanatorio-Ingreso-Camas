@@ -65,21 +65,24 @@ pip install pandas streamlit
 Para ejecutar esta aplicación en tu máquina local, sigue estos pasos:
 
 1. Clona este repositorio en tu sistema local.
-git clone <URL-del-repositorio>
+```
+    git clone <URL-del-repositorio>
     cd nombre-del-repositorio
 
 
 2. **Instalar Dependencias:**
 
     Asegúrate de tener Python y pip instalados. Luego, instala las dependencias necesarias ejecutando:
-pip install -r requirements.txt
-
+```
+    pip install -r requirements.txt
+```
 3. **Ejecutar la Aplicación:**
 
     Una vez que todas las dependencias estén instaladas, puedes ejecutar la aplicación usando Streamlit:
 
-streamlit run main.py
-
+```
+    streamlit run main.py
+```
 
 4. **Interactuar con la Aplicación:**
 

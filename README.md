@@ -121,11 +121,7 @@ Muestra el estado actual de las camas y los pacientes, incluyendo las camas vac√
 ## Imagenes
 
 ![Principal](imagen/Principal.PNG)
-![Estado_de_camas](imagen/Estado_de_camas.PNG)
-![Visualiacion de camas](imagen/Visualiacion de camas.PNG)
-![ingresar cama](imagen/ingresar-cama.PNG)
-![ingresar_atencion](imagen/ingresar atencion.PNG)
-![M√©dicos](imagen\Crear medico.PNG)
+
 
 
 ## Archivos Principales
